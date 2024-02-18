@@ -1,0 +1,303 @@
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+:root{
+	--color-neutral-light:#eee;
+	--color-neutral-medium:#999;
+	--color-neutral-dark:#555;
+
+	--color-black:#000;
+	--color-white:#fff;
+	--color-orange:#F09B6A;
+	--color-lightorange:#FBBD9A;
+
+	--header-height:3rem;
+	--spacing:1rem;
+
+
+	--font-serif: Georgia, "Times New Roman", serif;
+	--font-sans: Helvetica, Arial, sans-serif;
+	--font-gara: Garamond, serif;
+
+}
+
+body{
+	margin:0;
+	font-size:100%;
+	font-family:var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family:var(--font-serif);
+
+}
+
+a{
+	color:inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+
+}
+
+
+/* Layout Classes */
+
+.container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.display-flex{ display:flex; }
+.display-inline-flex{ display:inline-flex; }
+.display-block{ display:block; }
+.display-inline-block{ display:inline-block; }
+
+
+.flex-stretch{ flex:1 1 auto; }
+.felx-none{ flex:none; }
+
+.flex-align-center{ align-items:center; }
+.flex-justify-center{ justify-content:center; }
+
+
+
+/* Component Classes*/
+
+.nav ul{
+	list-style-type:none;
+	margin-top: 2em;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+.navbar{
+	background-color: var(--color-white);
+	color: var(--color-black);
+	line-height: var(--header-height);
+}
+
+	.navbar a {
+		padding: 0 0.5em;
+	}
+	.navlogo{
+		height: 40px;
+		margin-top: 2em;
+	}
+
+
+
+/* Hero */
+.hero{
+	height: 600px;
+	background-color: var(--color-white);
+
+	overflow:hidden;
+	position: relative;
+}
+
+.heroImage{	
+	width: 600px;
+ 	margin-left: 50%;
+ 	margin-top: 5em;
+}
+
+.heroContent{
+	position: absolute;
+	top: 9em;
+	left: 30%;
+	padding:5em 3em;
+}
+
+	.hero h1{
+		font-size: 3em;
+		margin-bottom: 0.3em;
+	}
+
+	.hero p{
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+
+.heroAbout{
+	font-size: 1em;
+	border: none;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 25px;
+    background-color:var(--color-black);
+    color: var(--color-white);
+}
+
+.heroAbout:hover {
+	background-color: var(--color-neutral-medium);
+	color: var(--color-black);
+}
+
+.heroService{
+	font-size: 1em;
+	border: none;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 25px;
+    background-color:var(--color-orange);
+    color: var(--color-white);
+}
+.heroService:hover{
+	background-color:var(--color-lightorange) ;
+}
+
+
+
+/* Intro */
+.intro{
+	background-color: var(--color-white);
+	text-align: center;
+	padding: 100px 20px;
+	padding-bottom: 200px;
+
+}
+
+	.intro p{
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+.introLogo{
+	width: 50px;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+/* Card */
+
+.card{
+	background-color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow:hidden;
+	position: relative;
+}
+	.card.soft{
+		border-radius: 0.5em;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	.card.hard{
+		border-radius: 0.2em;
+		border: 2px solid var(--color-neutral-medium);
+	}
+
+	.card.dark{
+		background-color:var(--color-neutral-dark);
+		color: var(--color-neutral-light);
+	}
+
+	.card.medium{
+		background-color:var(--color-neutral-medium);
+	}
+
+	.card.flat{
+		padding: 0;
+	}
+
+
+
+
+/* View window [Name somthing: think about what it's does rather than what it's look!]*/
+
+.view-window{
+	height: 40vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+
+/* Services */
+
+.services{
+	height:70vh;
+	background-color: var(--color-white);
+	text-align: center;
+	padding-top: 8em;
+}
+	.services h2{
+		margin-right: 40%;
+		margin-bottom: 1em;
+	}
+
+
+/* bottom */
+.bottom{
+	height: 20vh;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	text-align: center;
+	padding-top: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
