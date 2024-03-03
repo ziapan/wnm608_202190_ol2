@@ -6,9 +6,16 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="css/storetheme.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	
 </head>
 <body>
+
 
 	<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
 	<header class="navbar">
@@ -19,13 +26,87 @@
 			<div class="flex-stretch"></div>
 			<nav class="flex-none nav">
 				<ul class="container display-flex">
-					<li class="flex-stretch" ><a href="#article1">Services</a></li>
+					<li class="flex-stretch" ><a href="#article1">Shop</a></li>
 					<li class="flex-stretch"><a href="#article2">About</a></li>
 					<li class="flex-stretch"><a href="#article3">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
+
+	<!-- gridsystem -->
+
+	<!-- <div class="container">
+		<div class="card soft">
+			<h2>Grid</h2>
+			<div class="grid">
+				<div class="cola-xs-6">column 6</div>
+				<div class="cola-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<!-- <div class="container">
+		<div class="card soft">
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium"> -->
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+	<!-- 		<div class="col-xs-6 col-md-3">
+				<div class="card soft">Card</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">Card</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">Card</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">Card</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+
 
 
 
@@ -36,12 +117,14 @@
 			<img class="heroImage" src="img/PomDog.png" alt="Pomeranian Dog">
 			<div class="heroContent">
 				<h1>Everything about<br> our paw friends</h1>
-				<p>It starts with love, every Paw Friend<br> that comes to Doboki is part of our family</p>
+				<p>Bringing joy to every wag and purr with our exclusive<br> selection of premium Korean pet toys.</p>
 				<button class="heroAbout">About</button>
-				<button class="heroService">Our Service</button>
+				<button class="heroShop">Shop now</button>
 			</div>
 	</div>
 
+
+	<div class="line"></div>
 
 
 	<!-- Intro -->
@@ -49,7 +132,7 @@
 	<div class="intro">
 		<img class="introLogo" src="img/Logo-large.png" alt="Logo">
 		<h2>What we believe</h2>
-		<p>We go beyond the basics of care, and strive to understand and meet the unique needs of each of our "paw friends". From what they eat, to how they play, to the environment in which they rest, we take great care to ensure that their stay here is as warm and comfortable as their home.</p>
+		<p>At DOBOKI, we believe that every pet deserves the joy of play and discovery. We trust in the power of quality and innovation to enhance the lives of pets and their owners alike. We value the strong bond between pets and their families, striving to strengthen it with every product we offer.</p>
 	</div>
 
 
@@ -64,12 +147,39 @@
 
 
 
-	<!-- Services -->
+	<!-- Popular -->
 
-	<div class="services">
-		<h2>Our Service</h2>
-		<img class="servicesImg" src="img/services.png" alt="srvices list">
-		
+	<div class="popular">
+		<h2>Popular</h2>
+		<div class="popularGallery">
+			<div class="popularItem">
+				<img src="img/product1.png" alt="toy1" width="266">
+				    <p class="popularBold">BiteMe<p>
+    				<p>My Little Animal Friends toy</p>
+    				<p class="popularBold">$13</p>
+			</div>
+
+			<div class="popularItem">
+				<img src="img/product2.png" alt="toy2" width="266">
+				<p class="popularBold">Cake</p>
+   				<p>3 in one Happy Bark Day Cake</p>
+    			<p class="popularBold">$24</p>
+			</div>
+
+			<div class="popularItem">
+				<img src="img/product3.png" alt="toy3" width="266">
+				<p class="popularBold">BiteMe</p >
+  				<p>Mushroom Nose Toy</p>
+   				<p class="popularBold">$8</p>
+			</div>
+
+			<div class="popularItem">
+				<img src="img/product4.png" alt="toy4" width="266">
+				<p class="popularBold">Cup Noddle</p>
+    			<p>A nose work crinkling cup</p>
+    			<p class="popularBold">$22</p>
+			</div>
+		</div>	
 	</div>
 
 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Styleguide</title>
+
+	
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+	<style>
+
+		
+		body{
+			background-color:var(--color-lightgrey);
+		}
+
+
+		.colorCard{
+			background-color: var(--color-white);
+			margin-top: 1em;
+			margin-bottom: 1em;
+			padding: 3em;
+
+			border-radius: 15px;
+			text-align: center;
+		
+			overflow:hidden;
+			position: relative;
+		}
+
+			.color1{
+				background-color:var(--color-neutral-light);
+			}
+
+			.color2{
+				background-color: var(--color-neutral-medium);
+			}
+
+			.color3{
+				background-color: var(--color-black);
+				color: var(--color-white);
+			}
+
+			.color4{
+				background-color:var(--color-lightOrange);
+			}
+
+			.color5{
+				background-color: var(--color-mediumOrange);
+			}
+
+			.color6{
+				background-color: var(--color-orange);
+				color: var(--color-white);
+			}
+
+
+
+	</style>
+	
+</head>
+<body>
+<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Styleguide</h1>
+				<img class="navlogo" src="../img/Logo.png" alt="Logo">
+			</div>
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li class="flex-stretch"><a href="#tableofcontents">Table of contents</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+		<div class="card soft">
+			<nav class="nav">
+				<ul>
+					<li><a href="#typography">Typography</a></li>
+					<li><a href="#headings">Headings</a></li>
+					<li><a href="#paragraphs">Paragraphs</a></li>		
+					<li><a href="#card">Card</a></li>
+					<li><a href="#navigations">Navigations</a></li>
+					<li><a href="#colors">Colors</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container" id="#typography">
+		<h2>Typography</h2>
+
+		<div class="card soft" id="headings">
+			<h3>Headings --- Font family: Playfair Display</h3>
+
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+
+		<div class="card soft" id="paragraphs">
+			<h3>Paragraphs --- Font family: Montserrat</h3>
+			<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Dicta, nobis? Illo quisquam aliquid architecto rem aut minus beatae libero, in tempore tenetur. Veritatis, voluptas quia aspernatur, itaque facilis facere beatae.</p>
+			<p>Amet expedita suscipit earum ut similique molestias quaerat nisi dicta. Iste in praesentium accusantium id corporis, soluta earum exercitationem, et similique doloremque autem doloribus dicta possimus quis debitis amet nobis.</p>
+			<p>Iste eos facilis assumenda, odit minus, tempore necessitatibus possimus consectetur culpa! Doloribus voluptates debitis natus praesentium, similique inventore. Aperiam saepe earum cumque inventore repellat explicabo dicta quisquam laborum nostrum nisi!</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="container" id="card">
+		<h2>Cards</h2>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">Card</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card soft">Card Soft</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card hard">Card Hard</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card dark">Card Dark</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card medium">Card Medium</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<div class="card orange">Card Orange</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container" id="navigations">
+		<h2>Navigation</h2>
+
+		<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<img class="navlogo" src="../img/Logo.png" alt="Logo">
+			</div>
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li class="flex-stretch" ><a href="#article1">Shop</a></li>
+					<li class="flex-stretch"><a href="#article2">About</a></li>
+					<li class="flex-stretch"><a href="#article3">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	</div>
+
+	<div class="container" id="colors">
+		<h2>Color</h2>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color1">#FAFAFA</div>			
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color2">#8F8F8F</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color3">#555</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color4">#F6D7C5</div>			
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color5">#F7BC9A</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+			<div class="colorCard color6">#F09B6A</div>
+			</div>
+
+
+		</div>
+
+
+	
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
