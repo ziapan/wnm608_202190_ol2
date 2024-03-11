@@ -13,6 +13,14 @@
 	gap:var(--grid-gap) ;
 }
 
+#popularGrid{
+	--grid-gap:1em;
+	grid-gap:var(--grid-gap);
+	gap:var(--grid-gap) ;
+	margin: 0 15em;
+	padding-bottom: 8em;
+}
+
 
 
 .col-1{ grid-column:span 1; }

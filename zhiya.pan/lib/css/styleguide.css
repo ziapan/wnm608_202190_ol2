@@ -91,6 +91,14 @@ a:hover{
 	font-size: 1.3em;
 }
 
+.nav a{
+	display: block;
+	padding: 0.2em 0.5em;
+}
+
+.nav-flex ul{
+	display: flex;
+}
 
 .navbar{
 	background-color: var(--color-white);
@@ -98,13 +106,13 @@ a:hover{
 	line-height: var(--header-height);
 }
 
-	.navbar a {
-		padding: 0 0.8em;
-	}
-	.navlogo{
-		height: 40px;
-		margin-top: 2em;
-	}
+.navbar a {
+	padding: 0 0.8em;
+}
+.navlogo{
+	height: 40px;
+	margin-top: 2em;
+}
 
 
 
@@ -119,37 +127,37 @@ a:hover{
 
 .heroImage{	
 	width: 700px;
- 	margin-left: 50%;
- 	margin-top: 5em;
+	margin-left: 50%;
+	margin-top: 5em;
 }
 
 .heroContent{
 	position: absolute;
 	top: 7em;
-	left: 30%;
+	left: 20%;
 	padding:5em 3em;
 }
 
-	.hero h1{
-		font-size: 4em; 
-		margin-bottom: 0.3em;
-		font-weight: 400;
-		line-height: 65px;
-	}
+.hero h1{
+	font-size: 4em; 
+	margin-bottom: 0.3em;
+	font-weight: 400;
+	line-height: 65px;
+}
 
-	.hero p{
-		font-size: 1em;
-		margin-bottom: 1em;
-	}
+.hero p{
+	font-size: 1em;
+	margin-bottom: 1em;
+}
 
 .heroAbout{
 	font-size: 1em;
 	border: none;
-    padding: 10px 30px;
-    margin: 5px;
-    border-radius: 25px;
-    background-color:var(--color-black);
-    color: var(--color-white);
+	padding: 10px 30px;
+	margin: 5px;
+	border-radius: 25px;
+	background-color:var(--color-black);
+	color: var(--color-white);
 }
 
 .heroAbout:hover {
@@ -160,11 +168,11 @@ a:hover{
 .heroShop{
 	font-size: 1em;
 	border: none;
-    padding: 10px 30px;
-    margin: 5px;
-    border-radius: 25px;
-    background-color:var(--color-orange);
-    color: var(--color-white);
+	padding: 10px 30px;
+	margin: 5px;
+	border-radius: 25px;
+	background-color:var(--color-orange);
+	color: var(--color-white);
 }
 .heroShop:hover{
 	background-color:var(--color-lightOrange) ;
@@ -175,9 +183,9 @@ a:hover{
 
 /* line */
 .line{
-	margin: 20px 600px; 
-  	height: 1px;
- 	background-color: var(--color-lightgrey); 
+	margin: 20px; 
+	height: 1px;
+	background-color: var(--color-lightgrey); 
 }
 
 
@@ -191,14 +199,14 @@ a:hover{
 	padding-bottom: 200px;
 
 }
-	.intro h2{
-		font-weight: 600;
-	}
+.intro h2{
+	font-weight: 600;
+}
 
-	.intro p{
-		margin-left: 35%;
-		margin-right: 35%;
-	}
+.intro p{
+	margin-left: 35%;
+	margin-right: 35%;
+}
 
 .introLogo{
 	width: 50px;
@@ -223,33 +231,33 @@ a:hover{
 	overflow:hidden;
 	position: relative;
 }
-	.card.soft{
-		border-radius: 0.5em;
-		box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	}
+.card.soft{
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-	.card.hard{
-		border-radius: 0.2em;
-		border: 2px solid var(--color-neutral-medium);
-	}
+.card.hard{
+	border-radius: 0.2em;
+	border: 2px solid var(--color-neutral-medium);
+}
 
-	.card.dark{
-		background-color:var(--color-black);
-		color: var(--color-neutral-light);
-	}
+.card.dark{
+	background-color:var(--color-black);
+	color: var(--color-neutral-light);
+}
 
-	.card.medium{
-		background-color:var(--color-neutral-medium);
-	}
+.card.medium{
+	background-color:var(--color-neutral-medium);
+}
 
-	.card.flat{
-		padding: 0;
-	}
+.card.flat{
+	padding: 0;
+}
 
-	.card.orange{
-		background-color: var(--color-orange);
-		color: var(--color-white);
-	}
+.card.orange{
+	background-color: var(--color-orange);
+	color: var(--color-white);
+}
 
 
 
@@ -257,7 +265,7 @@ a:hover{
 /* View window [Name somthing: think about what it's does rather than what it's look!]*/
 
 .view-window{
-	height: 40vh;
+	height: 70vh;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -272,7 +280,7 @@ a:hover{
 
 /* Popular */
 
-.popular{
+/*.popular{
 	background-color: var(--color-white);
 	display: flex;
 	flex-direction: column;
@@ -281,31 +289,40 @@ a:hover{
 	padding-bottom: 200px;
 }
 
-	.popular h2{
-		font-size: 1.8em;
-		margin-bottom: 1.5em;
-	}
+.popular h2{
+	font-size: 1.8em;
+	margin-bottom: 1.5em;
+}
 
 .popularGallery{
 	display: flex; 
- 	justify-content: center;
-  	flex-wrap: wrap;
-  	gap: 35px;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
 }
 
 .popularItem{
 	flex:0 0 266px;
-  	text-align: left;
-  	line-height: 1em;
+	text-align: left;
+	line-height: 1em;
 }
 
 .popularBold{
 	font-weight: 600;
+}*/
+
+
+
+.popularTopic{
+	margin-left: 10em;
+	padding-top: 6em;
 }
 
 
 
-/* bottom */
+
+/* Bottom */
+
 .bottom{
 	background-color: var(--color-black);
 	color: var(--color-white);
@@ -315,36 +332,209 @@ a:hover{
 
 
 
+/* Table */
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td{
+	text-align: left;
+	padding: 0.2em, 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color:var(--color-lightgrey);
+}
+
+.table.lined.vertical td:not(:first-child),
+.table.lined.vertical th:not(:first-child)  {
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.horizontal tbody tr{
+	border-top: 1px solid var(--color-lightgrey);
+}
+
+.table.lined.border{
+	border: 1px solid var(--color-lightgrey);
+}
+
+
+
+/* Figure */
+.figure{
+	margin:0;
+}
+.figure img{
+	width:100%;
+	vertical-align: text-bottom;
+}
+.figure figcaption{
+	padding:1em 0em;
+	font-weight: 600;
+}
+
+
+
+/* Product Grid */
+
+.figure.product{
+	text-align: left;
+}
+
+.productIntro{
+	font-size: 0.8em;
+	font-weight: 300;
+	padding: 1em 0em;
+	padding-top: 0.3em;
+}
+
+
+
+
+/* Product Overlay */
+
+.overlay{
+	position:relative;
+	overflow: hidden;
+}
+
+.overlayInfo{
+	color: var(--color-white);
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity:0;
+	transition: all 0.3s;
+	line-height: 1em;
+
+}
+
+.overlayInfo:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+
+
+/* Form */
+
+.form-select>select,
+.hotdog,
+.hotdog input,
+.form-button,
+.form-input,
+.form-item{
+	display: inline-block;
+	background-color: transparent;
+	border-width:0;
+	font:inherit;
+	font-size: 0.8em;
+	-webkit-appearance:none;
+	color: inherit;
+	width: 100%;
+	outline: 0;
+}
+
+.form-input{
+	border-bottom: 1px solid var(--color-lightgrey);
+	padding: 1em 1.5em;
+}
+
+.form-input:focus{
+	border-bottom-color: var(--color-mediumOrange);
+}
+
+
+.form-label{
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+	display: block;
+	width: 100%;
+}
+
+
+
+.form-control{
+	margin: 1em 0;
+}
+
+
+.form-button{
+	background-color: var(--color-lightgrey);
+	border-radius: 0.2em;
+	cursor: pointer;
+	text-align: center;
+	padding: 0.5em 1.5em;
+}
+
+.form-button:hover{
+	text-decoration: none;
+}
+
+.form-button:active{
+	background-color: var(--color-neutral-medium);
+}
 
 
 
 
 
+/* Hotdog */
+
+.hotdog{
+	background-color: var(--color-lightgrey);
+	border-radius: 2em;
+	padding: 1em 1.5em;
+	display: flex;
+}
+
+.hotdog.dark{
+	background-color: var(--color-black);
+	color:var(--color-white);
+}
+
+.hotdog.border{
+	background-color: var(--color-white);
+	border:1px solid var(--color-lightgrey);
+}
 
 
 
 
+/* Select */
 
+.form-select>select{
+	padding: 0.5em 1em;
+	background-color: var(--color-lightgrey);
+	border-radius: 0.3em;
+	cursor: pointer;
+}
 
+.form-select{
+	position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-select::after{
+	content: '⌄';
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+	position: absolute;
+	top:50%;
+	right: 0.5em;
+	transform: translateY(-50%);
+}
 
 
 
