@@ -114,6 +114,10 @@ a:hover{
 	margin-top: 2em;
 }
 
+.hidden{
+	display: none; 
+}
+
 
 
 /* Hero */
@@ -535,6 +539,58 @@ a:hover{
 	right: 0.5em;
 	transform: translateY(-50%);
 }
+
+
+/* Toggle */
+.toggle label{
+	font-size: 1.3rem;
+	display: inline-block;
+	width: 2em;
+	height: 1em;
+	border:0.1em solid var(--color-neutral-medium);
+	border-radius: 1em;
+	position: relative;
+}
+.toggle label::after{
+	content: '';
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 1em;
+	position: absolute;
+	background-color: var(--color-lightgrey);
+	transition: all 0.3s;
+}
+.toggle input:checked + label::after{
+	transform: translateX(1em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
