@@ -562,7 +562,7 @@ a:hover{
 	transition: all 0.3s;
 }
 .toggle input:checked + label::after{
-	transform: translateX(1em);
+	transform: translateX(1em                                                                  );
 }
 
 
