@@ -1,0 +1,34 @@
+[
+	
+	{
+		"name":"Zhiya Pan",
+		"type":"student",
+		"email":"Pan613520@gmail.com",
+		"classes":[608,617]
+	},
+	{
+		"name":"Tim Zhu",
+		"type":"enginner",
+		"email":"Tim@gmail.com",
+		"classes":[608,623,413,412,123,333]
+	},
+	{
+		"name":"Joey Xu",
+		"type":"Actor",
+		"email":"Joey@gmail.com",
+		"classes":[608]
+	},
+	{
+		"name":"Iris Wei",
+		"type":"Teacher",
+		"email":"Iris@gmail.com",
+		"classes":[608,123,423,444]
+	},
+	{
+		"name":"Vivian Chen",
+		"type":"student",
+		"email":"Vivian@gmail.com",
+		"classes":[608]
+	}
+
+]
