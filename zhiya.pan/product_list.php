@@ -7,6 +7,7 @@
 
 	<?php include "parts/meta.php"; ?>
 
+
 </head>
 <body>
 	
@@ -22,6 +23,13 @@
 				<li><a href="product_item.php?id=3">Pet Product 3</a></li>
 				<li><a href="product_item.php?id=4">Pet Product 4</a></li>
 			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card soft">
+			<a href="products.sql">Products Database</a>
+
 		</div>
 	</div>
 
