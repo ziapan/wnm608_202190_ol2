@@ -531,6 +531,8 @@ a:hover{
 
 .form-select{
 	position: relative;
+	width: 18%;
+    padding-top: 0.3em;
 }
 
 .form-select::after{
