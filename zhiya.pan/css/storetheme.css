@@ -67,15 +67,25 @@ body{
 	text-align: center;
 } 
 
+
+
+
+
+/* Product cart page */
+
+
 .card-section{
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 
 
+.cart-items-layout{
+	margin-top: 5em;
+}
 
-.cart_img img{
-	width: 30%;
+.cart-thumbs{
+	width: 50%;
 	height: auto;
 }
 
@@ -89,3 +99,13 @@ body{
     padding-bottom: 1em;
     font-size: 1.2em;
 }
+
+.cart_img img{
+	width: 30%;
+	height: auto;
+	
+}
+
+
+
+

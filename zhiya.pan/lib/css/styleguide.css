@@ -284,13 +284,9 @@ a:hover{
 
 
 
-
-.popularTopic{
-	margin-left: 10em;
-	padding-top: 6em;
+.popular_items{
+	margin-top: 10em;
 }
-
-
 
 
 /* Bottom */
@@ -299,7 +295,8 @@ a:hover{
 	background-color: var(--color-black);
 	color: var(--color-white);
 	text-align: center;
-	padding: 80px 20px;
+	padding: 150px 20px;
+	margin-top: 10em;
 }
 
 
@@ -462,6 +459,10 @@ a:hover{
 	padding: 1em 1.5em;
 }
 
+.form-button.inline{
+	width: initial;
+}
+
 .form-button:hover{
 	text-decoration: none;
 }
@@ -505,9 +506,13 @@ a:hover{
 	cursor: pointer;
 }
 
+.item_form_select{
+	width: 18%;
+}
+
+
 .form-select{
 	position: relative;
-	width: 18%;
     padding-top: 0.3em;
 }
 

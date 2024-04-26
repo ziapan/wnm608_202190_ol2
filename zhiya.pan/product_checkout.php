@@ -1,3 +1,14 @@
+<?php
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+
+
+$cart_items = getCartItems();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +23,35 @@
 
 	<?php include "parts/navbar.php"; ?>
 
+	<div class="container cart-items-layout">
+		<h2>Checkout</h2>
+		<div class="grid gap ">
+			<div class="col-xs-12 col-md-12">
+				
+				<?= array_reduce($cart_items,'checkoutListTemplate') ?>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col-xs-12 col-md-5">
+				<div class="card soft flat">
+					<?= checkoutTotals() ?> 
+			
+				</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
 	<div class="container">
 		<div class="card soft">
-			<h2>Checkout</h2>
-
 
 
 			<h3>Address</h3>
