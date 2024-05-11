@@ -23,6 +23,15 @@ function makeConn() {
 }
 
 
+function makePDOConn(){
+	try{
+		$conn = new PDO(...PDOAuth());
+	}catch(PDOException $e){
+		die($e->getMessage());
+	}
+	return $conn;
+}
+
 
 function makeQuery($conn,$qry) {
 	$result = $conn->query($qry);

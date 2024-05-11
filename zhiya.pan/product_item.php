@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
 
 $product = makeQuery(
 				makeConn(),
@@ -95,6 +97,16 @@ $image_elements = array_reduce($images,function($r,$o){
 					<?= $image_elements ?>
 				</div>
 		</div>
+
+		<div class="container recommended-products">
+			<h2>You may also like</h2>
+			<?php
+				recommendedSimilar($product->id);
+			?>
+			
+		</div>
+
+
 	</div>
 
 

@@ -170,10 +170,42 @@ return <<<HTML
 	<div class="flex-none">&dollar;$taxedfixed </div> 
 </div>
 
-
-
 HTML;
 }
+
+
+
+
+function recommendedProducts($a){
+$products = array_reduce($a,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+
+
+function recommendedSimilar($id=0,$limit=4){
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` <> $id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
