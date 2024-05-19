@@ -122,7 +122,7 @@ $cart_items = getCartItems();
 				</div>
 				<div class="form-control">
 					<!-- <input type="submit" class="form-button" value="Submit"> -->
-					<a href="product_confirmation.php" class="form-button">Check out</a>
+					<a href="product_confirmation.php" class="form-button checkout-button">Checkout</a>
 				</div>
 			</form>
 		</div>

@@ -76,7 +76,7 @@ $image_elements = array_reduce($images,function($r,$o){
 					</div>
 
 					<div>
-						<input type="submit" class="form-button" value="Add To Cart">
+						<input type="submit" class="form-button addToCart-button" value="Add To Cart">
 					</div>
 
 				</form>

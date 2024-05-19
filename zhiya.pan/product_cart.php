@@ -4,8 +4,7 @@ include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
 
-
-$cart_items = getCartItems();
+$cart = getCart();
 
 ?>
 
@@ -26,22 +25,38 @@ $cart_items = getCartItems();
 
 	<div class="container cart-items-layout">
 		<h2>Your cart</h2>
-		<div class="grid gap ">
-			<div class="col-xs-12 col-md-12">
-				
-					<?= array_reduce($cart_items,'cartListTemplate') ?>
-				
+
+		<?php 
+
+		if(count($cart)) {
+			?>
+			<div class="grid gap ">
+				<div class="col-xs-12 col-md-12">				
+					<?= array_reduce(getCartItems(),'cartListTemplate') ?>
+				</div>
+			</div>
+
+
+			<?php
+		} else{
+			?>
+			<div>
+				Your cart is empty
+			</div><br>
+			<p><a href="product_list.php">Go Shopping</a></p><br>
+
+			<?php
+		}
+
+		?>
+		<div class="container">
+			<div class="col-xs-12 col-md-5">
+				<div class="card soft flat">
+					<?= cartTotals() ?> 	
+				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container">
-		<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
-					<?= cartTotals() ?> 
-			
-				</div>
-		</div>
+	
 	</div>
 	
 </body>

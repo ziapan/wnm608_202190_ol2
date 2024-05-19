@@ -30,43 +30,36 @@ include_once "parts/templates.php";
 
 
 	<?php include "parts/navbar.php"; ?>
-<!-- 
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-none">
-				<img class="navlogo" src="img/Logo.png" alt="Logo">
-			</div>
-			<div class="flex-stretch"></div>
-			<nav class="nav nav-flex flex-none">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="product_list.php">Shop</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="product_cart.php">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
- -->
-	
-
 
 
 	<!-- Hero -->
 
-	<div class="hero">
-			<img class="heroImage" src="img/PomDog.png" alt="Pomeranian Dog">
-			<div class="heroContent">
-				<h1>Everything about<br> our paw friends</h1>
-				<p>Bringing joy to every wag and purr with our exclusive<br> selection of premium Korean pet toys.</p>
-				<button class="heroAbout"><a href="About.php">About</a></button>
-				<button class="heroShop"><a href="product_list.php">Shop now</a></button>
-			</div>
+<!-- 
+	<div class="container hero">
+		<img img src="img/PomDog.png" alt="Pomeranian Dog">
+		<div class="hero-text">
+			<h1>Everything about<br> our paw friends</h1>
+	        <p>Bringing joy to every wag and purr with our exclusive<br> selection of premium Korean pet toys.</p>
+	        <button class="heroAbout"><a href="About.php">About</a></button>
+			<button class="heroShop"><a href="product_list.php">Shop now</a></button>
+		</div>
+	</div>
+ -->
+
+	<div class="container">
+		<div class="hero">
+				<img class="heroImage" src="img/PomDog.png" alt="Pomeranian Dog">
+				<div class="heroContent">
+					<h1>Everything about<br> our paw friends</h1>
+					<p>Bringing joy to every wag and purr with our exclusive<br> selection of premium Korean pet toys.</p>
+					<button class="heroAbout"><a href="About.php">About</a></button>
+					<button class="heroShop"><a href="product_list.php">Shop now</a></button>
+				</div>
+		</div>
 	</div>
 
-
 	<div class="line"></div>
+
 
 
 	<!-- Intro -->

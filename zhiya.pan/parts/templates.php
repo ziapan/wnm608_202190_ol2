@@ -108,7 +108,7 @@ return <<<HTML
 	<div class="flex-none">&dollar;$taxedfixed </div> 
 </div>
 
-<a href="product_checkout.php" class="form-button">Checkout</a>
+<a href="product_checkout.php" class="form-button checkout-button">Checkout</a>
 
 
 HTML;

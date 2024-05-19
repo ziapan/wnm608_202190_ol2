@@ -111,6 +111,30 @@ body{
 	
 }
 
+.checkout-button{
+	font-size: 1.2em;
+	background-color:var(--color-black);
+	color: var(--color-white);
+}
+.checkout-button:hover {
+	background-color: var(--color-neutral-medium);
+	color: var(--color-black);
+}
+
+.addToCart-button{
+	font-size: 1em;
+	border: none;
+	padding: 10px 30px;
+	margin: 5px;
+	border-radius: 25px;
+	background-color:var(--color-orange);
+	color: var(--color-white);
+}
+.addToCart-button:hover{
+	background-color:var(--color-lightOrange) ;
+}
+
+
 
 
 
