@@ -36,12 +36,25 @@ include_once "parts/templates.php";
 
 			<div class="form-control">
 				<div class="card soft">
-					<h3 clas>Price Filter</h3>
-					<div class="form-select item_form_select">
-						<select class="js-sort">
-							<option value="1">High to low</option> 
-							<option value="2">Low to high</option> 
-						</select>
+				<div class="display-flex">
+					<div class="flex-stretch display-flex">
+						<div class="flex-none">
+							<button data-filter="category" data-value="" type="button" class="form-button">All</button>
+						</div>
+						<div class="flex-none">
+							<button data-filter="category" data-value="SniffToys" type="button" class="form-button">Sniff Toys</button>
+						</div>
+						<div class="flex-none">
+							<button data-filter="category" data-value="FetchToys" type="button" class="form-button">Fetch Toys</button>
+						</div>
+					</div>
+					<div class="flex-none">
+						<div class="form-select item_form_select">
+							<select class="js-sort">
+								<option value="1">High to low</option> 
+								<option value="2">Low to high</option> 
+							</select>
+						</div>
 					</div>
 				</div>
 			</div>

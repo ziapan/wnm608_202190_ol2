@@ -14,6 +14,7 @@ switch($data->type){
 		$output['result'] = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `price` DESC LIMIT 12");
 		break;	
 
+
 	case "product-search":
 		$output['result'] = makeQuery(makeConn(),"SELECT * 
 			FROM `products` 
@@ -21,6 +22,16 @@ switch($data->type){
 			ORDER BY `price` DESC 
 			LIMIT 12");
 		break;	
+
+
+	case "product_filter":
+		$output['result'] = makeQuery(makeConn(),"SELECT * 
+			FROM `products` 
+			WHERE `$data->column` LIKE '$data->value' 
+			ORDER BY `price` DESC 
+			LIMIT 12");
+		break;	
+
 
 	case "product-sort":
 		$output['result'] = makeQuery(makeConn(),"SELECT * 
